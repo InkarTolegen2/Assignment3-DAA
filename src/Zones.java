@@ -14,11 +14,13 @@ public class Zones {
         int[] order = new int[n];
         int ordCnt = 0;
         int[] stack = new int[n];
+
         for (int st = 0; st < n; st++) {
             if (seen[st]) continue;
             int top = 0;
             stack[top++] = st;
             seen[st] = true;
+            
             while (top > 0) {
                 int u = stack[top - 1];
                 if (idx[u] < out[u].length) {
