@@ -13,6 +13,7 @@ public class Maze {
         return Arrays.copyOf(broken, cnt);
     }
 
+
     // Mission 2: Kruskal
     public static int[] cheapestMaze(Input.Walls w) {
         int m = w.count();
@@ -43,6 +44,7 @@ public class Maze {
             adj[w.a()[k]][fill[w.a()[k]]++] = k;
             adj[w.b()[k]][fill[w.b()[k]]++] = k;
         }
+        
         boolean[] in = new boolean[n];
         PriorityQueue<Long> pq = new PriorityQueue<>();
         in[0] = true;
@@ -63,6 +65,7 @@ public class Maze {
                 if (!in[w.a()[e]] || !in[w.b()[e]]) pq.add(((long) w.cost()[e] << 32) | e);
             }
         }
+
         return total;
     }
 }
