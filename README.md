@@ -1,8 +1,8 @@
 # Assignment 3. Maze Escape
 
-Student ID:252971
-Name:Ingkar Tolegen
-Group:SE-2540
+Student ID: 252971
+Name: Ingkar Tolegen
+Group: SE-2540
 Maze size (rows x columns): 10 * 9
 
 This file is the report. Fill it in as you go. How to start: `START_HERE.md`. The task: `docs/Assignment3.pdf`.
